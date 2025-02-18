@@ -39,7 +39,7 @@ Welcome to **DockSpace**! 🌊 This repository is my personal harbor of containe
    - **Goal:** Run Evidently AI inside a Docker container to analyze ML model performance and detect data drift.  
    - **Key Focus:** AI model monitoring, automation, and analytics.  
 
-**9. Minikube with Docker on Windows ☸️**  
+**9. [Minikube with Docker on Windows](https://github.com/vidhi-jaju/DockSpace/blob/2bb494241a67c2699e5c06b778542fe15544bae1/9.%20Minikube%20with%20Docker%20on%20Windows/README.md) ☸️**  
    - **Goal:** Set up Minikube with Docker on Windows for running Kubernetes clusters locally in a Docker container.  
    - **Key Focus:** Kubernetes management, local cluster setup, and Docker integration on Windows.  
 
