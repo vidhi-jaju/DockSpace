@@ -1,4 +1,4 @@
-# 🚢 **Titanic Survival Predictor: Containerized Streamlit App**
+# 🚢 **Titanic Survival Predictor:- Containerized Streamlit App**
 
 ## 📌 **Overview**
 The **Titanic Survival Prediction Model** is a machine learning application that predicts whether a passenger would have survived the Titanic disaster based on various input features. This project is built using **Python**, **scikit-learn**, **pandas**, and **Streamlit** for a user-friendly web interface. To ensure seamless deployment and portability, **Docker** is used to containerize the application.
