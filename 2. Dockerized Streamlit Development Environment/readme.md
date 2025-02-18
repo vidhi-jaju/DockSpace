@@ -116,6 +116,11 @@ docker run -p 8501:8501 streamlit-app
 ## 🎯 **Conclusion**  
 You now have a **fully functional Streamlit environment** running inside Docker! 🚀  
 
+![Streamlit App Screenshot](https://github.com/vidhi-jaju/DockSpace/blob/ffeee9124d5ab5508d44ce7cdb2debb5a6ce94b1/2.%20Dockerized%20Streamlit%20Development%20Environment/Images/Screenshot%202025-02-19%20013824.png?raw=true)
+![Streamlit App Screenshot](https://github.com/vidhi-jaju/DockSpace/blob/ffeee9124d5ab5508d44ce7cdb2debb5a6ce94b1/2.%20Dockerized%20Streamlit%20Development%20Environment/Images/Screenshot%202025-02-19%20013835.png)
+![Streamlit App Screenshot](https://github.com/vidhi-jaju/DockSpace/blob/ffeee9124d5ab5508d44ce7cdb2debb5a6ce94b1/2.%20Dockerized%20Streamlit%20Development%20Environment/Images/Screenshot%202025-02-19%20013853.png)
+
+
 💡 **Next Steps:**  
 🔹 Add more features to your Streamlit app.  
 🔹 Deploy the containerized app on **AWS, GCP, or Azure**.  
