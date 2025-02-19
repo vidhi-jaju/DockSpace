@@ -27,7 +27,7 @@ Welcome to **DockSpace**! 🌊 This repository is my personal harbor of containe
    - **Goal:** Ensure data persistence and prevent loss by using Docker volumes and bind mounts.  
    - **Key Focus:** Storage management, Linux containers, and backups.  
 
-**6. Docker Bridge: Balancing Isolation & Connectivity 🔗**  
+**6. [Docker Bridge: Balancing Isolation & Connectivity](https://github.com/vidhi-jaju/DockSpace/tree/5b00bb02b0334f158600cf6affdb21b3df2dcaf9/6.%20Docker%20Bridge%3A%20Balancing%20Isolation%20%26%20Connectivity%20) 🔗**  
    - **Goal:** Master Docker bridge networks to create a balance between container isolation and seamless connectivity.  
    - **Key Focus:** Multi-container communication, secure networking, and efficiency.  
 
