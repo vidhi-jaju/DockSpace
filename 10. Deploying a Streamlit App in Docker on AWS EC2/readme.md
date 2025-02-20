@@ -12,7 +12,7 @@ This guide provides a step-by-step approach to deploying a Streamlit app inside 
 
 ---
 
-## 📖 Table of Contents
+## 📖 Table of Contents-
 1️⃣ Setting Up a VPC, Subnet, Route Table, and Internet Gateway  
 2️⃣ Launching and Configuring an EC2 Instance  
 3️⃣ Connecting to EC2  
