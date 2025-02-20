@@ -43,7 +43,7 @@ Welcome to **DockSpace**! 🌊 This repository is my personal harbor of containe
    - **Goal:** Set up Minikube with Docker on Windows for running Kubernetes clusters locally in a Docker container.  
    - **Key Focus:** Kubernetes management, local cluster setup, and Docker integration on Windows.
      
-**10. 🚀 Deploying a Streamlit App in Docker on AWS EC2 ☁️**
+**10. Deploying a Streamlit App in Docker on AWS EC2 ☁️**
    - **Goal:** Deploy a containerized Streamlit application on an AWS EC2 instance for seamless and scalable web app hosting.  
    - **Key Focus:** AWS networking, Docker containerization, cloud deployment, and security.
 ---
