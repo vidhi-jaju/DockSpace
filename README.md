@@ -31,7 +31,7 @@ Welcome to **DockSpace**! 🌊 This repository is my personal harbor of containe
    - **Goal:** Master Docker bridge networks to create a balance between container isolation and seamless connectivity.  
    - **Key Focus:** Multi-container communication, secure networking, and efficiency.  
 
-**7. Streamlit & PostgreSQL, Docked 🐘**  
+**7. [Streamlit & PostgreSQL, Docked](https://github.com/vidhi-jaju/DockSpace/tree/581f6bc0ed2ce27bb10af153c9ac01fd756bd86a/7.%20Streamlit%20%26%20PostgreSQL%2C%20Docked) 🐘**  
    - **Goal:** Connect Streamlit with PostgreSQL inside a containerized environment for real-time data interaction.  
    - **Key Focus:** Full-stack integration, database handling, and scalable applications.  
 
@@ -41,8 +41,11 @@ Welcome to **DockSpace**! 🌊 This repository is my personal harbor of containe
 
 **9. [Minikube with Docker on Windows](https://github.com/vidhi-jaju/DockSpace/blob/2bb494241a67c2699e5c06b778542fe15544bae1/9.%20Minikube%20with%20Docker%20on%20Windows/README.md) ☸️**  
    - **Goal:** Set up Minikube with Docker on Windows for running Kubernetes clusters locally in a Docker container.  
-   - **Key Focus:** Kubernetes management, local cluster setup, and Docker integration on Windows.  
-
+   - **Key Focus:** Kubernetes management, local cluster setup, and Docker integration on Windows.
+     
+**10. 🚀 Deploying a Streamlit App in Docker on AWS EC2 ☁️**
+   - **Goal:** Deploy a containerized Streamlit application on an AWS EC2 instance for seamless and scalable web app hosting.  
+   - **Key Focus:** AWS networking, Docker containerization, cloud deployment, and security.
 ---
 
 
