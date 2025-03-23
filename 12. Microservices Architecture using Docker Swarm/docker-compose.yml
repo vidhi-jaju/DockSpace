@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  backend-service:
+    image: backend-service  # Use your locally built image
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    networks:
+      - app-network
+    ports:
+      - "5000:5000"
+
+  api-gateway:
+    image: api-gateway  # Use your locally built image
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    networks:
+      - app-network
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend-service
+
+networks:
+  app-network:
+    driver: overlay
