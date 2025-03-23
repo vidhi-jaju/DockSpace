@@ -29,6 +29,7 @@ docker swarm init
 This command makes your machine the **Swarm Manager**.
 
 ---
+![img1](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/1.png)
 
 ## **Step 2: Project Setup**
 
@@ -115,12 +116,17 @@ Navigate to your project directory and build the images:
 docker build -t backend-service ./backend-service
 docker build -t api-gateway ./api-gateway
 ```
+![img2](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/2.png)
+
+![img3](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/3.png)
+
 
 Verify the built images:
 
 ```bash
 docker images
 ```
+![img4](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/4.png)
 
 ---
 
@@ -170,6 +176,7 @@ Deploy your services to the **Docker Swarm cluster** using:
 ```bash
 docker stack deploy -c docker-compose.yml my_microservices
 ```
+![img5](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/5.png)
 
 ---
 
@@ -186,6 +193,7 @@ List the running containers:
 ```bash
 docker ps
 ```
+![img6](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/6.png)
 
 ---
 
@@ -201,6 +209,7 @@ Expected output:
 ```
 API Gateway: Vidhi Jaju
 ```
+1[img](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/web%20output.png)
 
 ---
 
@@ -217,6 +226,7 @@ Verify the scaled services:
 ```bash
 docker stack services my_microservices
 ```
+![img7](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/7.png)
 
 ---
 
@@ -243,6 +253,7 @@ To **remove the deployed stack**, run:
 ```bash
 docker stack rm my_microservices
 ```
+![img8](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/8.png)
 
 To **leave Docker Swarm**, run:
 
