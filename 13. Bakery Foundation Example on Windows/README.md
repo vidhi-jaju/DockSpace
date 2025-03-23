@@ -36,6 +36,7 @@ Open PowerShell and run:
 packer --version
 ```
 ✅ If successful, the Packer version will be displayed.
+![img](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/1.png)
 
 ### 1.2 Install AWS CLI
 #### Step 1: Download AWS CLI
@@ -49,6 +50,7 @@ packer --version
   aws --version
   ```
   ✅ If successful, it should display something like: `aws-cli/2.x.x Windows/10`
+![img2](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/2.png)
 
 ### 1.3 Configure AWS CLI (5 minutes)
 Run the following command in PowerShell:
@@ -61,6 +63,7 @@ Enter the following when prompted:
 - **Default region name:** `us-east-1` (or your preferred region)
 - **Default output format:** `json` (Press Enter)
 ✅ AWS CLI is now configured.
+![img3](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/3.png)
 
 ## Step 2: Create the Packer Template
 
@@ -113,6 +116,7 @@ source "amazon-ebs" "python39" {
   source_ami = "ami-xxxxxxxxxxxxxxx"  # Replace with actual AMI ID
 }
 ```
+![img4](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/4.png)
 
 ## Step 3: Validate and Build the Image
 
@@ -130,12 +134,15 @@ Validate the template:
 packer validate bakery.pkr.hcl
 ```
 ✅ Expected Output: `The configuration is valid.`
+![img5](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/5.png)
 
 ### 3.2 Build the Machine Image
 Run the following command:
 ```powershell
 packer build bakery.pkr.hcl
 ```
+![img6](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/6.png)
+
 This will:
 - Create a temporary EC2 instance.
 - Install Python 3.9.
@@ -148,6 +155,7 @@ This will:
 1. Log in to [AWS Console](https://aws.amazon.com/console/).
 2. Navigate to **EC2 → AMIs** (Set the region you used when creating the AMI).
 3. Find the AMI named: `bakery-foundation-python39-timestamp`
+![img7](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/7.png)
 
 ### 4.2 Launch an EC2 Instance with Your AMI
 1. Go to **AWS EC2 Console**: [AWS EC2 Dashboard](https://console.aws.amazon.com/ec2/).
@@ -158,6 +166,7 @@ This will:
    - **Key Pair:** Use an existing key or create a new one.
    - **Security Group:** Allow **SSH (port 22)** and other required ports.
 5. Click **Launch! 🚀**
+![img8](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/8.png)
 
 ### 4.3 Connect to the Instance
 1. Get the Public IP from the EC2 Console.
@@ -165,7 +174,9 @@ This will:
    ```powershell
    ssh -i "C:\path\to\your-key.pem" ubuntu@your-instance-ip
    ```
-3. Accept the SSH key fingerprint (First Time Only): Type `yes` and press Enter.
+   ![img9](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/9.png)
+   
+4. Accept the SSH key fingerprint (First Time Only): Type `yes` and press Enter.
 ✅ You are now logged into your EC2 instance! 🎉
 
 ### 4.4 Verify Python Installation
@@ -174,8 +185,73 @@ Once inside the instance, run:
 python3.9 --version
 ```
 ✅ Expected Output: `Python 3.9.5`
+![img10](https://github.com/vidhi-jaju/DockSpace/blob/ed97e514d1e8e008d7d19cb1706d21c35c4db923/13.%20Bakery%20Foundation%20Example%20on%20Windows/images/10.png)
 
-## Conclusion
+
+### Understanding Python Versions on Ubuntu  
+
+#### Default Python Version in Ubuntu  
+Ubuntu 20.04 comes pre-installed with **Python 3.8.10**. You can verify this by running:  
+
+```sh
+python3 --version
+```
+**Expected Output:**  
+```
+Python 3.8.10
+```
+
+#### Installing Python 3.9  
+Since Ubuntu manages multiple Python versions, you need to install Python 3.9 manually:  
+
+```sh
+sudo apt-get install -y python3.9
+```
+
+Once installed, verify the installation:  
+
+```sh
+python3.9 --version
+```
+**Expected Output:**  
+```
+Python 3.9.5
+```
+
+#### Why `python` Command is Not Available by Default  
+By default, Ubuntu only includes `python3`, and **not** `python`. Running:  
+
+```sh
+python --version
+```
+Results in:  
+```
+Command 'python' not found
+```
+
+#### Why Ubuntu Uses `python3` Instead of `python`  
+
+1. **Legacy vs. Modern Versions:**  
+   - Older Ubuntu versions had **both** Python 2 and Python 3.  
+   - `python` referred to **Python 2**, while `python3` referred to **Python 3**.  
+   - Since Python 2 reached **end-of-life (EOL)** on January 1, 2020, Ubuntu 20.04 and later **removed Python 2**.  
+
+2. **Ubuntu’s Design Choice:**  
+   - If `python` was included by default, old scripts designed for Python 2 might **break**.  
+   - To enforce clarity, Ubuntu **only** includes `python3`.  
+
+Running `python` without installing it will always result in:  
+```
+Command 'python' not found
+```
+
+### 🎉 Conclusion  
+You have successfully:  
+✅ Set up **Packer**  
+✅ Created an **AWS AMI**  
+✅ Deployed an **EC2 instance with Python 3.9**  
+
+🚀 Now you can use your instance for Python development on AWS!  
 You have successfully set up Packer, created an AWS AMI, and deployed an EC2 instance with Python 3.9! 🚀
 
 ---
