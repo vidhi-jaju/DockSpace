@@ -1,7 +1,3 @@
-Here’s your updated documentation with **`database_students.sql`** instead of **`Tarakk_demo.sql`**:  
-
----
-
 # 🐬 Setting Up MySQL in a Docker Container with an Initialization Script 🚀  
 
 ## 📌 Prerequisites  
