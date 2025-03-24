@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return {
-        "message": "ਹੋ ਉਮਰਾਂ ਵਾਰੇ ਤਾਂ ਬੀਬਾ ਰੱਬ ਜਾਨ ਦਾ, ਜਿੰਦਗੀ ਜਿਓਨੀ ਕਿਵੇਂ ਜੱਟ ਨੂ ਪਤਾ",
+        "message": "Vidhi Jaju",
         "hostname": os.uname().nodename,
         "version": "1.0.0"
     }
