@@ -209,7 +209,7 @@ Expected output:
 ```
 API Gateway: Vidhi Jaju
 ```
-1[img](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/web%20output.png)
+![img](https://github.com/vidhi-jaju/DockSpace/blob/aae38f3f0ed617580f8d6f4b6722b2a67314d0b4/12.%20Microservices%20Architecture%20using%20Docker%20Swarm/assets/web%20output.png)
 
 ---
 
